@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*
+ * Copyright MIT © <2013> < dehash.com >
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+ * documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
+ * the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and 
+ * to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+ * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
+ * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+@keyframes twist {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+body {
+  perspective: 50em;
+  background-color: #333;
+}
+
+.cube {
+  position: relative;
+  top: 50px;
+  margin: 0 auto 0;
+  padding: 0;
+  width: 320px;
+  height: 47px;
+  list-style: none;
+  transform-style: preserve-3d;
+  animation-duration: 3s;
+  animation-name: twist;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+}
+
+.face {
+  box-sizing: border-box;
+  position: absolute;
+  width: 320px;
+  height: 47px;
+  background: url("https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") -15px -30px;
+  backface-visibility: hidden;
+}
+
+.face:nth-child(1) {
+  transform: translateZ(10em);
+}
+
+.face:nth-child(2) {
+  transform: rotateY(180deg) translateZ(10em);
+}
+
+.face:nth-child(3) {
+  transform: rotateY(90deg) translateZ(10em);
+}
+
+.face:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(10em);
+}
+
+.cube:nth-child(1) {
+  animation-delay: 100ms;
+}
+
+.f1 {
+  background-position: -15px -77px;
+}
+
+.cube:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.f2 {
+  background-position: -15px -124px;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.f3 {
+  background-position: -15px -171px;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 400ms;
+}
+
+.f4 {
+  background-position: -15px -218px;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 500ms;
+}
+
+.f5 {
+  background-position: -15px -265px;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 600ms;
+}
+
+.f6 {
+  background-position: -15px -312px;
+}
+
+.cube:nth-child(7) {
+  animation-delay: 700ms;
+}
+
+.f7 {
+  background-position: -15px -359px;
+}
+
+.cube:nth-child(8) {
+  animation-delay: 800ms;
+}
+
+.f8 {
+  background-position: -15px -406px;
+}
+
+.cube:nth-child(9) {
+  animation-delay: 900ms;
+}
+
+.f9 {
+  background-position: -15px -453px;
+}
+
+.cube:nth-child(10) {
+  animation-delay: 1000ms;
+}
+
+.f10 {
+  background-position: -15px -500px;
+}
+
+.cube:nth-child(11) {
+  animation-delay: 1100ms;
+}
+
+.f11 {
+  background-position: -15px -547px;
+}
+
+.cube:nth-child(12) {
+  animation-delay: 1200ms;
+}
+
+.f12 {
+  background-position: -15px -594px;
+}
+
+.cube:nth-child(13) {
+  animation-delay: 1300ms;
+}
+
+.f13 {
+  background-position: -15px -641px;
+}
